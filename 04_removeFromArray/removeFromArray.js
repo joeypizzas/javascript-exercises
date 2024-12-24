@@ -1,6 +1,6 @@
 const removeFromArray = function(inputArray, ...itemsRemoved) {
     for (const item of itemsRemoved) {
-        if (inputArray.indexOf(item) !== -1){
+        while (inputArray.indexOf(item) !== -1){
             inputArray.splice(inputArray.indexOf(item), 1);
         } 
     }
